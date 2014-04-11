@@ -1,3 +1,6 @@
+# Make Fibonacci
+From the Udacity version of Make 2048.
+
 # Make 2048
 A Udacity version of Gabriele Cirulli's [original 2048](http://gabrielecirulli.github.io/2048/). 
 
