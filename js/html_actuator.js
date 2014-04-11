@@ -52,18 +52,18 @@ HTMLActuator.prototype.clearContainer = function (container) {
 
 HTMLActuator.prototype.addTile = function (tile) {
   var valueMap = {
-    2 :    '<Udacity>',
-    4 :    '<Intro CS>',
-    8 :    "skills=['code']",
-    16 :   "skills.add('CSS')",
-    32 :   '</Intro CS>',
-    64 :   '<Job search>',
-    128 :  'getJob(skills)',
-    256 :  '</Job search>',
-    512 :  'if Udacious:',
-    1024 : 'skills.increase()',
-    2048 : 'myJob.advance()',
-    4096 : 'myCareer=myJob'
+    1 :    '1',
+    2 :    '2',
+    3 :    "3",
+    5 :   "5",
+    8 :   '8',
+    13 :   '13',
+    21 :  '21',
+    34 :  '34',
+    55 :  '55',
+    89 : '89',
+    144 : '144',
+    233 : '233'
   }
   var self = this;
 
@@ -76,7 +76,7 @@ HTMLActuator.prototype.addTile = function (tile) {
   // We can't use classlist because it somehow glitches when replacing classes
   var classes = ["tile", "tile-" + tile.value, positionClass];
 
-  if (tile.value > 2048) classes.push("tile-super");
+  if (tile.value > 144) classes.push("tile-super");
 
   this.applyClasses(wrapper, classes);
 
