@@ -172,7 +172,7 @@ HTMLActuator.prototype.scoreTweetButton = function () {
   tweet.setAttribute("href", "https://twitter.com/share");
   tweet.textContent = "Tweet";
 
-  var text = "" + this.score + " points in Fibonacci Puzzle! #FiboPuzzle"
+  var text = "" + this.score + " points in Fibonacci Puzzle! #FiboPuzzle www.albertocamacho.com/fibogame"
   tweet.setAttribute("data-text", text);
 
   return tweet;
